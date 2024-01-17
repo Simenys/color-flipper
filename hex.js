@@ -4,6 +4,8 @@ const btn = document.getElementById('btn');
 
 const color = document.querySelector('.color');
 
+document.body.style.backgroundColor = "#f1f5f8";
+
 btn.addEventListener('click', function() {
     const randomHex = getRandomHex();
     document.body.style.backgroundColor = randomHex;

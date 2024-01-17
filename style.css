@@ -48,30 +48,72 @@ table {
 }
 
 /* My code bellow */
-
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+}
 .nav-center {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0 10%;
-    background-color: aliceblue;
-    height: 3em;
-    
+    background-color: #d8e8f2;
+    height: 2.5em;
+    box-shadow: 0 3px 5px #d8e2e8;
+    font-size: 1.2em;
 }
 
 .nav-links {
+    width: 110px;
     display: flex;
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
     text-decoration: none;
+    color: black;
+    transition: 0.4s;
+    
+}
+
+a:hover {
+    color: grey;
 }
 
 .container {
-    display: flexbox;
-    justify-content: center;
-    border: 1px solid black;
     width: 50%;
-    min-height: 20vh;
+    min-height: 10vh;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 15%;
     text-align: center;
+}
+
+button {
+    margin-top: 5%;
+    font-size: medium;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px 5px;
+    transition: 0.4s;
+    background-color: aliceblue;
+}
+
+button:hover {
+    border: 2px solid black;
+    background-color:#d8e2e8;
+}
+
+button:active {
+    border: 2px solid aliceblue;
+}
+
+h2 {
+    background-color: black;
+    border-radius: 7px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;  
+    padding: 10px 0;
 }
